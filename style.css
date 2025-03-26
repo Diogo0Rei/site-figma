@@ -1,5 +1,5 @@
 body {
-    background-color: #3B3B98;
+    background-color: #6C63FF;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,13 +24,20 @@ body {
     padding: 0;
 }
 
-.nav .pagination .page-item a {
+.nav .pagination li {
+    margin: 0 5px;
+}
+
+.nav .pagination a {
     color: white;
-    background-color: #575FCF;
+    background-color: #1E1E64;
     padding: 5px 10px;
     border-radius: 5px;
-    margin: 0 5px;
     text-decoration: none;
+}
+
+.nav .pagination a.active {
+    background-color: #000;
 }
 
 .next-btn {
@@ -51,44 +58,38 @@ body {
 
 .content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-bottom: 20px;
-}
-
 .box {
-    background-color: #575FCF;
+    background-color: #3B3B98;
     padding: 20px;
     border-radius: 5px;
-    width: 30%;
     text-align: center;
     font-size: 18px;
+    margin: 10px;
+}
+
+.box.large {
+    width: 60%;
+}
+
+.box.small {
+    width: 30%;
 }
 
 .image-box img {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     border-radius: 5px;
+    display: block;
+    margin: auto;
 }
 
 .box a {
     color: yellow;
     text-decoration: none;
-}
-
-.footer {
-    background-color: #2C2C54;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
 }
